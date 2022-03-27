@@ -1,8 +1,8 @@
 body {
-    margin: 2;
+    margin: 0;
     font-family: 'Kaushan Script', cursive;
 
-    font-size:  15px;
+    font-size:  25px;
     line-height: 1.6;
     color: #333;
 }
@@ -33,4 +33,20 @@ margin: 0;
      background: url(../Images/LA.jpg) center no-repeat;
      -webkit-background-size: cover;
      background-size: cover;
+}
+
+/* nav */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    color: #dcdcdc ;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav-link:hover {
+    color:#fce38a ;
 }
