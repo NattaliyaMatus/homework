@@ -1,0 +1,326 @@
+body{
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    color:black;
+ }
+
+ *,
+ *:before,
+ *:after{
+    box-sizing:border-box;
+ }
+
+ h1,h2,h3
+
+ /*Container*/
+.container {
+       width:100%;
+       max-width: 1920px;
+       margin: 0 auto;
+       
+ }
+
+ /*Intro*/
+
+ .intro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:100vh;
+    background: url("../images/santorini-greciya-otel-bassejn-more_1.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+ }
+
+ .intro_inner{
+     width: 100%;
+     max-width: 880px;
+     margin:0 auto;
+
+     text-align: center;
+ }
+
+ .intro_title{
+   font-size:100px;
+   font-weight:700;
+   text-transform: uppercase;
+   text-align: center;
+   line-height: 1;
+ }
+
+ .intro-title:after {
+   content:"";
+   display: block;
+   width: 60px;
+   height: 3px;
+   margin: 60px auto 60px;
+
+   background-color: #fff;
+
+ }
+
+ /*Header*/
+ .header{
+    width: 100%;
+    padding-top: 30px;
+    height:98px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+ }
+
+.header_inner{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+ .header_logo {
+
+    
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+ }
+
+ /*Nav*/
+
+ .nav{
+   font-size: 12px;
+   color: #000000;
+
+ }
+
+ .nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position:relative;
+
+    color: black;
+    text-decoration: none;
+    transition: color .1s linear;
+
+ }
+
+ .nav_link:after{
+   content:"";
+   display:block;
+   width: 100%;
+   height: 3px;
+   
+
+   background-color: #25CA22;
+   opacity: 0;
+
+   position: absolute;
+   top: 100%;
+   left:0;
+   z-index:1;
+
+   transition: opacity .1s linear;
+ }
+
+ .nav_link:hover{
+   color: #25CA22;
+ }
+
+ .nav_link:hover:after,
+ .nav_link.active:after {
+    opacity: 1;
+ }
+
+ .nav_link.active{
+   opacity: 1;
+ }
+
+ /*Button*/
+ .bth{
+   display:inline-block;
+   vertical-align: top;
+   padding: 10px 15px;
+
+   border: 3px solid black;
+
+   font-size: 14px;
+   font-weight: 700;
+   color:#000000;
+   text-transform: uppercase;
+   text-decoration: none;
+
+   transition:  .1s linear;
+
+ }
+
+ .bth:hover{
+
+   background-color: white;
+   color:black;
+
+ }
+
+ .slider{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   
+ }
+
+ .slider_inner{
+   display: flex;
+   justify-content: space-between;
+}
+
+ .slider_item{
+   width:23% ;
+   padding:20px 0;
+   position: relative;
+   border-top: 3px solid white;
+   opacity: .7;
+   font-size: 18px;
+   text-transform: uppercase;
+ }
+
+ .slider_item.active{
+   opacity: 1;
+ }
+
+ .slider_item.active:before {
+   content:"";
+   display:block;
+   width: 70px;
+   height: 3px;
+
+   background-color: #f38181;
+
+   position: absolute;
+   top: -3px;
+   left: 0;
+   z-index: 1
+ }
+ .slider_num{
+   font-size:24px;
+   font-weight: 700;
+ }
+
+ /*Section*/
+ .section {
+   padding: 80px 0 ;
+ }
+
+ .section_header {
+   width: 100%;
+   max-width: 950px;
+   margin: 0 auto 40px;
+
+   text-align: center;
+   
+ }
+
+
+.section_suptitle {
+
+   font-family: 'Spartan', cursive;
+   font-size: 24px;
+   color:black;
+
+}
+
+.section_title {
+   font-size: 30px;
+   font-weight: 700;
+   color: #000000;
+   text-transform: uppercase;
+}
+
+.section_title:after {
+   content: "";
+   display: block;
+   width:100%;
+   height: 3px;
+   margin: 30 auto;
+   background-color: #000000;
+    
+}
+
+.section_text {
+   color: #000000;
+   font-size: 24px;
+}
+
+/*About*/
+.about{
+   margin-top: 80px;
+   display: flex;
+   justify-content:space-between;
+}
+
+.about_item {
+   width: 380;
+
+   background-color: #3a6af0;
+   
+}
+
+.about_item:hover .about_img {
+   transform: translate3d(-10px, -10px, 0);
+}
+
+.about_item:hover .about_img img {
+   opacity: .1;
+}
+
+
+.about_img {
+   background: linear-gradient(to bottom,#3a6af0, #8db8db);
+   transition: transform .2s linear;
+}
+
+.about_img img {
+   display: block;
+   transition: opacity .1s linear;
+
+}
+
+/*Statistics*/
+
+.statistics {
+   background-color: #95e1d3;
+}
+
+.stat {
+   display: flex;
+}
+
+.stat_item {
+   flex: 1 1 0;
+   padding: 70px 25px;
+
+   border-left: 1px solid #b5eae0;
+   text-align: center;
+   color: #000000;
+}
+
+.stat_item:last-child {
+   border-right: 1px solid #b5eae0;
+}
+
+.stat_count {
+   font-size: 72px;
+   font-weight: 700;
+   line-height: 1;
+   margin-bottom: 10px;
+
+}
+
+.stat_text {
+   font-size: 14px;
+   text-transform: uppercase;
+}
